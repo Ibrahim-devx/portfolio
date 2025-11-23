@@ -29,10 +29,11 @@
       const el = document.querySelector(link.selector);
       if(el){
         el.addEventListener('click', function(){
-          gtag('event', 'click', {
-            'event_category': 'Outbound',
-            'event_label': link.name
-          });
+          gtag('event', 'outbound_click', {
+  'link_name': link.name,
+  'link_url': el.href
+});
+
         });
       }
     });
