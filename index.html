@@ -9,18 +9,15 @@
 
   <link rel="stylesheet" href="styles/css.css" />
 
-  <!-- Google tag (gtag.js) -->
+ <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZH2QYT4CJZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-ZH2QYT4CJZ');
 
-
-  <script>
-  // Wait until the page loads
+  // Track clicks on LinkedIn, GitHub, and CV
   document.addEventListener('DOMContentLoaded', function() {
     const linksToTrack = [
       { selector: '#linkedin', name: 'LinkedIn' },
@@ -40,8 +37,6 @@
       }
     });
   });
-</script>
-
 </script>
 
 </head>
